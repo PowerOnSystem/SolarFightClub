@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "016510459b0d6925cb5bd9ef4087cc59",
+    "content-hash": "8907471d34b1e4b05b52d43b997b00c8",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -210,6 +210,103 @@
                 "dependency injection"
             ],
             "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "poweronsystem/databaseservice",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PowerOnSystem/DataBaseService.git",
+                "reference": "481d01af561d8b950af07ff2e1c187aa3ee42dc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PowerOnSystem/DataBaseService/zipball/481d01af561d8b950af07ff2e1c187aa3ee42dc6",
+                "reference": "481d01af561d8b950af07ff2e1c187aa3ee42dc6",
+                "shasum": ""
+            },
+            "require": {
+                "poweronsystem/webutility": "dev-master"
+            },
+            "require-dev": {
+                "kint-php/kint": "^2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PowerOn\\Database\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Sosa",
+                    "email": "sosalucas87@gmail.com",
+                    "homepage": "http://www.poweronsistemas.com.ar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Database service.",
+            "homepage": "https://github.com/poweronsystem/databaseservice",
+            "keywords": [
+                "database",
+                "mysql",
+                "orm",
+                "pdo",
+                "sql"
+            ],
+            "time": "2019-07-16T12:31:39+00:00"
+        },
+        {
+            "name": "poweronsystem/webutility",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PowerOnSystem/WebUtility.git",
+                "reference": "d51a2c0a2c75bc17aa05ad3fc245d5dbc428fb36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PowerOnSystem/WebUtility/zipball/d51a2c0a2c75bc17aa05ad3fc245d5dbc428fb36",
+                "reference": "d51a2c0a2c75bc17aa05ad3fc245d5dbc428fb36",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "kint-php/kint": "^2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PowerOn\\Utility\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Sosa",
+                    "email": "sosalucas87@gmail.com",
+                    "homepage": "http://www.poweronsistemas.com.ar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Utilities for php programmers.",
+            "homepage": "https://github.com/poweronsystem/webutility",
+            "keywords": [
+                "array hash",
+                "inflector",
+                "string formatter",
+                "utilities"
+            ],
+            "time": "2019-06-25T16:37:34+00:00"
         },
         {
             "name": "psr/container",
@@ -1950,7 +2047,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "poweronsystem/databaseservice": 20,
+        "poweronsystem/webutility": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
