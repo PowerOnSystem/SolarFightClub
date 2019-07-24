@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8907471d34b1e4b05b52d43b997b00c8",
+    "content-hash": "1d1428bc7cd775e64fe6c53dd272313a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -210,6 +210,55 @@
                 "dependency injection"
             ],
             "time": "2018-01-21T07:42:36+00:00"
+        },
+        {
+            "name": "poweronsystem/authorizationservice",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PowerOnSystem/AuthorizationService.git",
+                "reference": "db93b9a9d92115055f626b720950a45c3f367115"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PowerOnSystem/AuthorizationService/zipball/db93b9a9d92115055f626b720950a45c3f367115",
+                "reference": "db93b9a9d92115055f626b720950a45c3f367115",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "poweronsystem/webutility": "dev-master"
+            },
+            "require-dev": {
+                "kint-php/kint": "^2.1",
+                "poweronsystem/databaseservice": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PowerOn\\Authorization\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Sosa",
+                    "email": "sosalucas87@gmail.com",
+                    "homepage": "http://www.poweronsistemas.com.ar",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Servicio de autorizacion de usuarios y sectores.",
+            "homepage": "https://github.com/poweronsystem/authorizationservice",
+            "keywords": [
+                "auth",
+                "login",
+                "user"
+            ],
+            "time": "2019-07-04T11:48:00+00:00"
         },
         {
             "name": "poweronsystem/databaseservice",
@@ -2048,6 +2097,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "poweronsystem/authorizationservice": 20,
         "poweronsystem/databaseservice": 20,
         "poweronsystem/webutility": 20
     },

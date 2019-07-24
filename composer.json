@@ -14,6 +14,7 @@
     "require": {
         "php": ">=5.6",
         "monolog/monolog": "^1.17",
+        "poweronsystem/authorizationservice": "dev-master",
         "poweronsystem/databaseservice": "dev-master",
         "poweronsystem/webutility": "dev-master",
         "slim/slim": "^3.1"

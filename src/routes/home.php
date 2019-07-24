@@ -9,7 +9,8 @@ use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-$app->get('/', function (Request $request, Response $response, array $args) {
+/* @var $app App */
+$app->get('/api/', function (Request $request, Response $response, array $args) {
   /* @var $this Slim\Container */
 
   return $response->withJson([
