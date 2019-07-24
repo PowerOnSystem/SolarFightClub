@@ -8,6 +8,11 @@
 use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
+use PowerOn\Authorization\UserCredentials;
+use PowerOn\Authorization\AuthorizationException;
+use \App\Libs\AuthAdapter;
+use PowerOn\Utility\Session;
+
 
 /* @var $app App */
 $app->post('/api/account/login', function (Request $request, Response $response, array $args) {
@@ -29,7 +34,7 @@ $app->post('/api/account/login', function (Request $request, Response $response,
       $request->getParsedBodyParam('password')
   );
 
-  $adapter = new AbsolAuthAdapter($database);
+  $adapter = new AuthAdapter($database);
   $auth->registerAdapter($adapter);
 
   try {

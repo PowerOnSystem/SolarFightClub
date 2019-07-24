@@ -26,9 +26,17 @@ $app = new \Slim\App($settings);
 // Set up dependencies
 require __DIR__ . '/../src/dependencies/database.php';
 require __DIR__ . '/../src/dependencies/monolog.php';
+require __DIR__ . '/../src/dependencies/authorization.php';
+
+// Register start middlewares
+require __DIR__ . '/../src/middlewares/auth.php';
 
 // Register routes
 require __DIR__ . '/../src/routes/home.php';
+require __DIR__ . '/../src/routes/account.php';
+
+// Register end middlewares
+//require __DIR__ . '/../src/middlewares/response.php';
 
 // Run app
 $app->run();

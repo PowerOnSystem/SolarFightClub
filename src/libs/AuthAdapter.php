@@ -17,7 +17,7 @@ use PowerOn\Database\Model;
  *
  * @author Lucas Sosa <sosalucas87@gmail.com>
  */
-class SFCAuthAdapter implements AuthorizationAdapterInterface {
+class AuthAdapter implements AuthorizationAdapterInterface {
   /**
    * Base de datos
    * @var \PowerOn\Database\Model
